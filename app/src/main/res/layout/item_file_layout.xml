@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="fileInfo"
+            type="com.weihu.apkshare.vo.FileInfo"/>
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            >
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="@{fileInfo.name}"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@id/icon"
+                app:layout_constraintStart_toEndOf="@id/checkbox"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="apk"/>
+
+
+            <TextView
+                android:id="@+id/fileName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="@{fileInfo.fileName}"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@id/icon"
+                app:layout_constraintStart_toEndOf="@id/checkbox"
+                app:layout_constraintTop_toBottomOf="@id/name"
+                tools:text="xxxx.apk"/>
+
+
+            <TextView
+                android:id="@+id/share"
+                style="@style/ButtonTextStyle"
+                android:text="@string/app_share"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/checkbox"
+                app:layout_constraintTop_toBottomOf="@id/fileName"/>
+
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/photo_size"
+                android:layout_height="@dimen/photo_size"
+                android:layout_margin="5dp"
+                android:src="@{fileInfo.icon}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</layout>

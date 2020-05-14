@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">APKShare</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_edit">编辑</string>
+    <string name="action_all">全选</string>
+    <string name="action_cancel">取消</string>
+    <string name="retry">重试</string>
+    <string name="unknown_error">不知道的错误</string>
+    <string name="app_extract">提取</string>
+    <string name="app_share">分享</string>
+    <string name="app_install">安装</string>
+    <string name="title_user_app">用户APP</string>
+    <string name="title_system_app">系统APP</string>
+    <string name="title_extract_apk">已经导出的APK</string>
+    <string name="title_wx_apk">微信接收的APK</string>
+    <string name="extract_success">导出成功</string>
+    <string name="please_open_permission">请在设置中打开权限</string>
+    <string name="delete_success">删除成功</string>
+    <string name="ap_share">热点分享</string>
+    <string name="open_ap">打开热点</string>
+    <string name="close_ap">关闭热点</string>
+    <string name="connect_ap">连接热点</string>
+    <string name="hint_ap_name">热点名字</string>
+</resources>

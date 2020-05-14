@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <root-path name="root" path="" />
+    <external-path
+        name="files_root"
+        path="Android/data/com.weihu.apkshare/" />
+    <external-path
+        name="external_storage_root"
+        path="." />
+    <external-path
+        name="external_storage_download"
+        path="Download" />
+    <external-cache-path
+        name="update_cache"
+        path="." />
+</paths>
